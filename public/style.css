@@ -5,10 +5,12 @@
 }
 
 :root {
-    --main-bg-color: #fdfdfd;
-    --primary-color: #775ada;
+    --main-bg-color: #ffffff;
+    --primary-color: #5B557F;
     --grey-color: #5d5d5a;
     --shadow-color: #5d5d5a33;
+    --sec-color: #F8F8FC;
+    --black-color: #0F0D1E;
 }
 html {
   font-size: 62.5%;
@@ -18,41 +20,71 @@ body {
   height: 100vh;
   font-family: 'Nunito', sans-serif;
   color: #fff;
+  background-color: var(--primary-color);
 }
-
+/* Nav bar css */
 .nav {
+    background-color: var(--main-bg-color);
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
     height: 100vh;
     display: flex;
     justify-content: space-around;
-    width: 15%;
+    width: 13%;
     flex-direction: column;
-
     font-size: 2.5rem;
-    background-color: var(--main-bg-color);
-    box-shadow: .2rem 0 2rem var(--shadow-color);
-    background-color: var(--primary-color);
+    transition: all 1s;
+    position: relative;
 }
 
 .nav-item {
-    margin-left: 2rem;
+    opacity: 1;
+    margin-left: 1rem;
+    margin-right: 1rem;
     padding: 1rem 0 1rem 1rem;
     display: flex;
-    justify-self: center;
-    border-top-left-radius: .5rem;
-    border-bottom-left-radius: .5rem;
-    transition: all .5s;
-}
-.nav-item:hover{
-    cursor:pointer;
-    background-color: #fff;
+    align-items: center;
+    border-radius: .5rem;
+    transition: all .2s;
     color: var(--primary-color);
 }
+.nav-item:hover{
+    cursor:pointer; 
+    background: var(--sec-color);
+    color: var(--black-color);
+}
 
-.nav-brand {
-    text-align: center;
-    padding-bottom: 20rem;
+.nav-item:hover .nav-icon{
+  fill: var(--black-color);
+}
+.nav-title{
+  margin-left: 1rem;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1.1px;
+}
+
+.nav-icon {
+  opacity: 1;
+  transition: all 0.8s;
+  fill: var(--primary-color);
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.nav-profile {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-image {
+  cursor: pointer;
+}
+.profile-pic {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
 }
 
 
