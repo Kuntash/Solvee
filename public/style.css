@@ -11,6 +11,12 @@
     --shadow-color: #5d5d5a33;
     --sec-color: #F8F8FC;
     --black-color: #0F0D1E;
+    --light-gray: #ACACAC;
+}
+
+::selection{
+  background-color: lightgreen;
+  color: var(--main-bg-color);
 }
 html {
   font-size: 62.5%;
@@ -20,25 +26,29 @@ body {
   height: 100vh;
   font-family: 'Nunito', sans-serif;
   color: #fff;
-  background-color: var(--primary-color);
+}
+
+/* App */
+
+.app {
+  display: flex;
 }
 /* Nav bar css */
 .nav {
+    flex-basis: 13%;
     background-color: var(--main-bg-color);
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
     height: 100vh;
     display: flex;
     justify-content: space-around;
-    width: 13%;
     flex-direction: column;
     font-size: 2.5rem;
     transition: all 1s;
-    position: relative;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .nav-item {
-    opacity: 1;
     margin-left: 1rem;
     margin-right: 1rem;
     padding: 1rem 0 1rem 1rem;
@@ -47,6 +57,7 @@ body {
     border-radius: .5rem;
     transition: all .2s;
     color: var(--primary-color);
+    z-index: 10;
 }
 .nav-item:hover{
     cursor:pointer; 
@@ -86,5 +97,33 @@ body {
   height: 12rem;
   border-radius: 50%;
 }
+
+
+/* Explore Section */
+.explore {
+  text-align: center;
+  flex: 1;
+  background-color: var(--main-bg-color);
+}
+.explore-search {
+  border-radius: 2rem;
+  font-size: 2rem;
+  width: 80%;
+  margin-top: 2rem;
+  padding: 2rem 4rem;
+  border: none;
+  background-color: var(--sec-color);
+  font-family: 'Nunito', sans-serif;
+}
+
+.explore-search::placeholder{
+  color: var(--light-gray);
+}
+.explore-search:focus {
+  outline: none;
+
+}
+
+
 
 

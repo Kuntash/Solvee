@@ -1,7 +1,8 @@
+import Search from "./Search";
 const Explore = () => {
     return (
         <div className = "explore">
-            Explore
+            <Search />
         </div>
         );
 }
