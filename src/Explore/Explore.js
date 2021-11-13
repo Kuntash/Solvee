@@ -4,7 +4,6 @@ const Explore = () => {
     return (
         <div className = "explore">
             <ExploreNav/>
-
             <QuestionList />
         </div>
         );

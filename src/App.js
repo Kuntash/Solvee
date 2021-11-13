@@ -1,16 +1,18 @@
 import Navbar from "./Navbar/Navbar";
 import Explore from "./Explore/Explore";
-import { useState } from "react";
+import Post from "./Post/Post";
+import {Route, Routes} from "react-router-dom";
 
 
 const App = () => {
   
-  const [explore, setExplore] = useState(true);
-  
   return (
     <div className ="app">
-      <Navbar changeExplore = {setExplore} />
-      {explore ? <Explore /> : null}
+      <Navbar />
+      <Routes>
+        <Route exact path = "/Explore" element = {<Explore />} /> 
+        <Route exact path = "/Post" element = {<Post />} />
+      </Routes>
     </div>
   );
 };
