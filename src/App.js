@@ -4,11 +4,12 @@ import { useState } from "react";
 
 
 const App = () => {
-
-  const [explore, setExplore] = useState(true);
+  
+  const [explore, setExplore] = useState(false);
+  
   return (
     <div className ="app">
-      <Navbar changeExplore = {setExplore}/>
+      <Navbar changeExplore = {setExplore} />
       {explore ? <Explore /> : null}
     </div>
   );

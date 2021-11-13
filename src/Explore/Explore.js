@@ -1,8 +1,11 @@
-import Search from "./Search";
+import ExploreNav from "./ExploreNav";
+import QuestionList from "./QuestionList";
 const Explore = () => {
     return (
         <div className = "explore">
-            <Search />
+            <ExploreNav/>
+
+            <QuestionList />
         </div>
         );
 }
