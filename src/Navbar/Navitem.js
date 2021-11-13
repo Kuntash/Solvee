@@ -1,11 +1,15 @@
 const Navitem = (props) => {
+    const showButton = (e) => {
+        if(props.title === "Explore")
+            props.changeExplore(true);
+    }
     return (
 
-        <div className = "nav-item">
-            <svg className = "nav-icon">
+        <div onClick = {showButton} className = "nav-item" >
+            <svg onClick = {showButton} className = "icon nav-icon">
                 <use xlinkHref= {`./images/sprite.svg#${props.icon}`} />
             </svg>
-            <h1 className = "nav-title">
+            <h1 onClick = {showButton} className = "nav-title">
                 {props.title}
             </h1>
         </div>
