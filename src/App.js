@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const App = () => {
   
-  const [explore, setExplore] = useState(false);
+  const [explore, setExplore] = useState(true);
   
   return (
     <div className ="app">

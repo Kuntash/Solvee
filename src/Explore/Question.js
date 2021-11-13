@@ -21,11 +21,11 @@ const Question = (props) => {
                 )}
             </div>
             <button className = "button like">
-                    <svg className = " icon like-icon">
+                    <svg className = "icon like-icon">
                         <use xlinkHref = {`images/sprite.svg#Like`} />
                     </svg>
             </button>
-            <button className = "button dislike">
+            <button className = " button dislike">
                     <svg className = "icon dislike-icon">
                         <use xlinkHref = {`images/sprite.svg#Dislike`} />
                     </svg>
