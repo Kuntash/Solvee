@@ -1,0 +1,73 @@
+
+/* Post Question */
+
+.post {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 7% 7% 0 7%;
+    box-shadow: 0 .7rem 2.9rem 0 rgba(100, 100, 111, 0.2);
+    padding: 3rem;
+  }
+  
+  .post-title{
+      margin-bottom: 3rem;
+  }
+  
+  .title-label {
+    margin-right: 6rem;
+  }
+  .title-label, .desc-label {
+    font-size: 2rem;
+    color: var(--primary-color);
+  }
+  
+  .title-input {
+    width: 85%;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    padding: 2rem 4rem;
+    border: none;
+    background-color: var(--sec-color);
+    font-family: 'Nunito', sans-serif;
+    transition: all .5s;
+  }
+  
+  .title-input::placeholder, .desc-input::placeholder{
+    color: var(--light-gray);
+  }
+  .title-input:focus, .desc-input:focus {
+    outline: none;
+  }
+  
+  .post-description{
+    margin-bottom: 3rem;
+  }
+  
+  .post-button {
+    color: var(--primary-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    align-self: flex-start;
+    cursor: pointer;
+    border: none;
+    font-size: 2rem;
+    background-color: #fff;
+    box-shadow: 0 .7rem 2.9rem 0 rgba(100, 100, 111, 0.2);
+    transition: all .5s;
+  }
+  
+  .post-button:hover {
+    color: var(--black-color);
+    transform: translateY(-.3rem) scale(1.01);
+  
+  }
+  
+  
+  
+  
+  
+  
+  

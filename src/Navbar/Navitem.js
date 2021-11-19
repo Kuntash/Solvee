@@ -9,7 +9,7 @@ const Navitem = (props) => {
     return (
         <Link to = {`/${props.title}`} className = "nav-item">
                 <svg onClick = {showButton} className = "icon nav-icon">
-                    <use xlinkHref= {`./images/sprite.svg#${props.icon}`} />
+                    <use xlinkHref= {`images/sprite.svg#${props.icon}`} />
                 </svg>
                 <h1 onClick = {showButton} className = "nav-title">
                     {props.title}

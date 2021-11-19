@@ -1,5 +1,6 @@
 import Navitem from './Navitem';
 import Profile from './Profile';
+import "../assets/Navbar.css";
 const Navbar = (props) => {
     const navItem = ['Explore', 'Post', 'Leaderboard', 'Notification', 'Settings'];
     return (

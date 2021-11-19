@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+      --main-bg-color: #ffffff;
+      --primary-color: #5B557F;
+      --grey-color: #5d5d5a;
+      --sec-color: #F8F8FC;
+      --black-color: #0F0D1E;
+      --light-gray: #ACACAC;
+  }
+  
+  ::selection{
+    background-color: lightgreen;
+    color: var(--main-bg-color);
+  }
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    height: 100vh;
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+  }
+  
+  /* App */
+  
+  .app {
+    display: flex;
+  }
