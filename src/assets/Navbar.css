@@ -1,0 +1,66 @@
+
+/* Nav bar css */
+.nav {
+    z-index: 10;
+    flex-basis: 13%;
+    background-color: var(--main-bg-color);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    transition: all 1s;
+    box-shadow: 0 .7rem 2.9rem 0 rgba(100, 100, 111, 0.2);;
+}
+
+.nav-item {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem 0 1rem 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: .5rem;
+    transition: all .2s;
+    color: var(--primary-color);
+    z-index: 10;
+    text-decoration: none;
+}
+.nav-item:hover{
+    cursor:pointer; 
+    background: var(--sec-color);
+    color: var(--black-color);
+}
+
+.nav-item:hover .nav-icon{
+  fill: var(--black-color);
+}
+.nav-title{
+  margin-left: 1rem;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1.1px;
+}
+
+.nav-icon {
+  opacity: 1;
+  transition: all 0.8s;
+  fill: var(--primary-color);
+
+}
+
+.nav-profile {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-image {
+  cursor: pointer;
+}
+.profile-pic {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+}
+
